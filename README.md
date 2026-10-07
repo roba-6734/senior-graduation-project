@@ -83,3 +83,31 @@ Main v2 outputs:
 
 A v2 PASS means the reference can proceed to dynamic controller tracking in
 simulation. It is not approval for physical-robot deployment.
+
+## A5000 dynamic-tracking pipeline
+
+The Ayyala v2 reference is packaged for Unitree's official MuJoCo RL framework
+under `hpc/unitree_mjlab`. The bundle contains the validated 623 × 36 CSV,
+reproducible environment setup, Slurm conversion/training/evaluation jobs, and
+a full-motion evaluator that records MPKPE, end-effector error, joint error,
+actuator saturation, limit violations, and stability.
+
+Start with the cluster runbook:
+
+```bash
+cd hpc/unitree_mjlab
+cp config.env.example config.env
+# Edit cluster paths/settings, then:
+./setup_env.sh config.env
+./submit_pipeline.sh smoke config.env
+```
+
+Run the full job only after the smoke pipeline succeeds:
+
+```bash
+./submit_pipeline.sh full config.env
+```
+
+See `hpc/unitree_mjlab/README.md` for output locations, A5000 memory fallbacks,
+and the fair GMR-versus-ProtoMotion evaluation protocol. Dynamic simulation
+success still does not approve physical robot deployment.

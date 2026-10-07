@@ -1,0 +1,56 @@
+{
+  "duration_between_first_and_last_frame_s": 20.733333333333334,
+  "frames": 623,
+  "input_fps_hz": 30.0,
+  "joint_count": 29,
+  "joint_names_in_column_order": [
+    "left_hip_pitch_joint",
+    "left_hip_roll_joint",
+    "left_hip_yaw_joint",
+    "left_knee_joint",
+    "left_ankle_pitch_joint",
+    "left_ankle_roll_joint",
+    "right_hip_pitch_joint",
+    "right_hip_roll_joint",
+    "right_hip_yaw_joint",
+    "right_knee_joint",
+    "right_ankle_pitch_joint",
+    "right_ankle_roll_joint",
+    "waist_yaw_joint",
+    "waist_roll_joint",
+    "waist_pitch_joint",
+    "left_shoulder_pitch_joint",
+    "left_shoulder_roll_joint",
+    "left_shoulder_yaw_joint",
+    "left_elbow_joint",
+    "left_wrist_roll_joint",
+    "left_wrist_pitch_joint",
+    "left_wrist_yaw_joint",
+    "right_shoulder_pitch_joint",
+    "right_shoulder_roll_joint",
+    "right_shoulder_yaw_joint",
+    "right_elbow_joint",
+    "right_wrist_roll_joint",
+    "right_wrist_pitch_joint",
+    "right_wrist_yaw_joint"
+  ],
+  "output": {
+    "dtype_before_text_encoding": "float32",
+    "header": false,
+    "path": "/media/roba/E654BD7754BD4AD7/PROJECTS/seniorproject/hpc/unitree_mjlab/motions/ayyala_gmr_unitree_g1_29dof_v2_smoothed.csv",
+    "sha256": "8b0d0720d1cefae7819b9a7be5df7875877ae6fd0ec3b8c0b79411c60d4f49d9",
+    "shape": [
+      623,
+      36
+    ]
+  },
+  "quaternion_max_norm_error_before_normalization": 2.220446049250313e-16,
+  "quaternion_sign_flips_fixed": 0,
+  "root_quaternion_convention": "xyzw",
+  "schema": "unitree_rl_mjlab_g1_29dof_csv_v1",
+  "source": {
+    "path": "/media/roba/E654BD7754BD4AD7/PROJECTS/seniorproject/gmr_output_v2/ayyala_gmr_unitree_g1_29dof_v2_smoothed.pkl",
+    "sha256": "f83c281f349ccc60a786c6b4ffb9d0bab646b0cc0eb0c014ae69c9abdc67bcfc"
+  },
+  "unitree_rl_mjlab_commit": "1425b15f73bd4095f0df53709d7c389c3eb9e790"
+}
