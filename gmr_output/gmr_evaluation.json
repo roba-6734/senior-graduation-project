@@ -1,0 +1,206 @@
+{
+  "status": "REVIEW",
+  "scope": "kinematic simulation reference only",
+  "robot": "Unitree G1 29-DoF",
+  "gmr_commit": "bb1bbe40774794fceb2a7c579a3464a28e68c844",
+  "frames": 623,
+  "fps_hz": 30.0,
+  "human_height_estimate_m": 1.7366293668746948,
+  "ground_alignment": "per-frame GMR foot offset enabled",
+  "processing_seconds": 3.1647150940007123,
+  "processing_fps": 196.8581630558178,
+  "fidelity": {
+    "matched_robot_bodies": [
+      "pelvis",
+      "left_hip_roll_link",
+      "left_knee_link",
+      "left_toe_link",
+      "right_hip_roll_link",
+      "right_knee_link",
+      "right_toe_link",
+      "left_shoulder_yaw_link",
+      "left_elbow_link",
+      "left_wrist_yaw_link",
+      "right_shoulder_yaw_link",
+      "right_elbow_link",
+      "right_wrist_yaw_link"
+    ],
+    "all_position_error_m": {
+      "mean": 0.07844637365942522,
+      "p50": 0.07161653727650717,
+      "p95": 0.16659474153540973,
+      "p99": 0.17093701033765457,
+      "max": 0.17464614844849094
+    },
+    "upper_body_position_error_m": {
+      "mean": 0.0941868221438705,
+      "p50": 0.0771785806030793,
+      "p95": 0.16896024420519967,
+      "p99": 0.1724312855535219,
+      "max": 0.17464614844849094
+    },
+    "lower_body_position_error_m": {
+      "mean": 0.06905265043829353,
+      "p50": 0.07494911367107862,
+      "p95": 0.11287367840766693,
+      "p99": 0.11453241324533028,
+      "max": 0.11616497392524212
+    },
+    "per_body_mean_error_m": {
+      "pelvis": 0.04036602207954358,
+      "left_hip_roll_link": 0.1122475139599151,
+      "left_knee_link": 0.06417306596614729,
+      "left_toe_link": 0.023992248647362248,
+      "right_hip_roll_link": 0.1025247494423843,
+      "right_knee_link": 0.0861372433723234,
+      "right_toe_link": 0.025241081241628938,
+      "left_shoulder_yaw_link": 0.16680760440126746,
+      "left_elbow_link": 0.0964297705896682,
+      "left_wrist_yaw_link": 0.06970673714500546,
+      "right_shoulder_yaw_link": 0.16193393891109517,
+      "right_elbow_link": 0.03667147641710699,
+      "right_wrist_yaw_link": 0.03357140539907973
+    },
+    "stage1_task_error": {
+      "mean": 0.7068317996886047,
+      "p50": 0.7074361934812251,
+      "p95": 0.744013482094669,
+      "p99": 0.7497217984609812,
+      "max": 0.751903637302321
+    },
+    "stage2_task_error": {
+      "mean": 0.7068317996886047,
+      "p50": 0.7074361934812251,
+      "p95": 0.744013482094669,
+      "p99": 0.7497217984609812,
+      "max": 0.751903637302321
+    }
+  },
+  "feasibility": {
+    "joint_limit_violation_count": 0,
+    "frames_with_joint_limit_violation": 0,
+    "velocity_limit_rad_s": 9.42477796076938,
+    "velocity_limit_violation_count": 0,
+    "frames_with_velocity_limit_violation": 0,
+    "motor_speed_rad_s": {
+      "mean": 0.11048998634272364,
+      "p50": 0.06809649540426496,
+      "p95": 0.3315212738701932,
+      "p99": 0.7448719128237831,
+      "max": 5.30674126096157
+    },
+    "motor_acceleration_rad_s2": {
+      "mean": 2.427570955313798,
+      "p50": 1.148352902943988,
+      "p95": 6.521316700069133,
+      "p99": 32.18124110247372,
+      "max": 127.14226043859387
+    },
+    "acceleration_review_threshold_rad_s2": 50.0,
+    "frames_over_acceleration_review_threshold": 21,
+    "peak_motor_speed_event": {
+      "from_frame": 0,
+      "to_frame": 1,
+      "joint": "right_shoulder_pitch_joint",
+      "speed_rad_s": 5.30674126096157
+    },
+    "peak_motor_acceleration_event": {
+      "center_frame": 1,
+      "joint": "right_elbow_joint",
+      "acceleration_rad_s2": 127.14226043859387
+    },
+    "waist_speed_rad_s": {
+      "mean": 0.09316242518880341,
+      "p50": 0.05848280344950246,
+      "p95": 0.28028424484060044,
+      "p99": 0.6725977787507275,
+      "max": 1.5941423872211238
+    },
+    "root_linear_speed_m_s": {
+      "mean": 0.03632701870092672,
+      "p50": 0.025467642528544252,
+      "p95": 0.10527909789184892,
+      "p99": 0.2065460202773962,
+      "max": 0.2394608884112815
+    },
+    "root_angular_speed_rad_s": {
+      "mean": 0.13591809617766618,
+      "p50": 0.10391193856096237,
+      "p95": 0.2918519742469873,
+      "p99": 0.7442237541634747,
+      "max": 0.9961607966908794
+    },
+    "minimum_toe_body_height_m": 0.11905904656033406,
+    "self_collision_contact_count": 0,
+    "foot_contact_frame_ratio": {
+      "left": 0.9919743178170144,
+      "right": 0.9951845906902087
+    },
+    "foot_slip_speed_during_contact_m_s": {
+      "left": {
+        "mean": 0.04395165196706838,
+        "p50": 0.037047326669494146,
+        "p95": 0.09916585017878518,
+        "p99": 0.13010965255425513,
+        "max": 0.14905551001658948
+      },
+      "right": {
+        "mean": 0.042097034148984906,
+        "p50": 0.03579165518171863,
+        "p95": 0.09701242815221003,
+        "p99": 0.12218963528876803,
+        "max": 0.14810363835777313
+      }
+    },
+    "contact_segment_displacement_m": {
+      "left": {
+        "mean": 0.014662429384704113,
+        "p50": 0.012868923394030231,
+        "p95": 0.027746256381148814,
+        "p99": 0.028916650175196845,
+        "max": 0.029209248623708856
+      },
+      "right": {
+        "mean": 0.02530522886959556,
+        "p50": 0.02530522886959556,
+        "p95": 0.030051320213894037,
+        "p99": 0.030473195000053903,
+        "max": 0.03057866369659387
+      }
+    },
+    "maximum_speed_by_joint_rad_s": {
+      "left_hip_pitch_joint": 1.4896802166574177,
+      "left_hip_roll_joint": 0.5200594039420832,
+      "left_hip_yaw_joint": 0.6191583806940109,
+      "left_knee_joint": 1.090236803353436,
+      "left_ankle_pitch_joint": 0.7892495630663238,
+      "left_ankle_roll_joint": 0.35517669733677604,
+      "right_hip_pitch_joint": 1.8653026992150479,
+      "right_hip_roll_joint": 0.6859415592310719,
+      "right_hip_yaw_joint": 1.2357292974237863,
+      "right_knee_joint": 1.6516435803585072,
+      "right_ankle_pitch_joint": 0.6064347529716021,
+      "right_ankle_roll_joint": 0.2499572317186098,
+      "waist_yaw_joint": 0.8243799803992808,
+      "waist_roll_joint": 1.5941423872211238,
+      "waist_pitch_joint": 0.9101868519573295,
+      "left_shoulder_pitch_joint": 1.5756492514523124,
+      "left_shoulder_roll_joint": 2.5449457981065757,
+      "left_shoulder_yaw_joint": 0.5428225240518009,
+      "left_elbow_joint": 4.477028817356754,
+      "left_wrist_roll_joint": 0.6837374315664249,
+      "left_wrist_pitch_joint": 3.2285073119174887,
+      "left_wrist_yaw_joint": 0.45285583104906935,
+      "right_shoulder_pitch_joint": 5.30674126096157,
+      "right_shoulder_roll_joint": 0.6880990321284286,
+      "right_shoulder_yaw_joint": 4.535029169889506,
+      "right_elbow_joint": 4.350835086132053,
+      "right_wrist_roll_joint": 0.6148480085250863,
+      "right_wrist_pitch_joint": 1.052441789953907,
+      "right_wrist_yaw_joint": 1.410306934655618
+    }
+  },
+  "review_reasons": [
+    "21 frames exceed the 50 rad/s^2 diagnostic acceleration threshold; the peak is 127.1 rad/s^2 at frame 1 on right_elbow_joint. Smooth and re-evaluate before controller training or hardware use."
+  ]
+}

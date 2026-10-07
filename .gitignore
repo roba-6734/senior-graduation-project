@@ -1,0 +1,12 @@
+# Local Python environments
+.venv*/
+__pycache__/
+*.py[cod]
+.cache/
+
+# Licensed SMPL-X model data: never commit or redistribute
+models_smplx_v1_1/
+GMR/assets/body_models/
+
+# Generated validation artifacts
+validation_output/
