@@ -1,0 +1,5 @@
+config.env
+hpc_results/
+__pycache__/
+*.pyc
+.venv/
